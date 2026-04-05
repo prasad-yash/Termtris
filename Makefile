@@ -13,3 +13,9 @@ build: dirs
 
 run: build
 	$(BUILD_DIR)/main
+
+clean:
+	rm -r -f $(BUILD_DIR)
+
+debug:
+	tail -f debug.log
